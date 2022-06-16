@@ -24,7 +24,7 @@ class PredictDenoiseModel():
         self.batch_size = batch_size
 
 
-    def predict(self) -> np.array:
+    def predict(self) -> list:
         test_loader = DataLoader(dataset=self.test_dataset, batch_size=self.batch_size, shuffle=False)
 
         model = self.model
